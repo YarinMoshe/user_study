@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Redirect</title>
+    <script type="text/javascript">
+        function randomRedirect() {
+            // Array of Google Forms URLs
+            var urls = [
+                "https://docs.google.com/forms/d/1hjwrozDy-fTayX-k554EtIaMWj6XrHYVLVjcbP3ovQs/edit",
+                "https://docs.google.com/forms/d/1XwpFQxWDW0ovPwld1pPIveVPTbF_vgKfWTbAHaqrjFk/edit",
+                "https://docs.google.com/forms/d/1QYoh_la5WS04QJqxK3zBPb3DnQPeS_IKNLGR-5Ur88U/edit",
+                "https://docs.google.com/forms/d/1l8MP_MP424UcJTqBrOxfczJ3m5mG8-5ZjJAfgUicfx0/edit",
+                "https://docs.google.com/forms/d/1g0xL9hWkoTM-lJDSXdhynqGXZMlV7n-JhWmzZLlukzM/edit",
+                "https://docs.google.com/forms/d/1x_CnQYWgAIGe0_6HhexZA88UTwp4jtENLikPYzwRsmQ/edit"
+            ];
+
+            // Generate a random index
+            var randomIndex = Math.floor(Math.random() * urls.length);
+
+            // Redirect to the randomly selected URL
+            window.location.href = urls[randomIndex];
+        }
+    </script>
+</head>
+<body onload="randomRedirect()">
+    <!-- Content here if needed -->
+</body>
+</html>
